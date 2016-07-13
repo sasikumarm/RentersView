@@ -1,46 +1,55 @@
-<ion-navbar *navbar>
-    <ion-title>
-      Apartment Renter’s Realty
-    </ion-title>
-</ion-navbar>
+
 
 <ion-content class="home">
-    <p> &emsp;Find an apartment, condo or house for rent on ofs.com(R). Discover apartment rentals,
-       townhomes and many other types of rentals that suit your needs.</p>
-   <div padding >
 
-              <button class="button button-light">  
-         	    <ion-icon name="home"></ion-icon> 1 BHK 
-              </button>     
-              <button class="button  button-dark" (click)="goToPanoramicViewPage()">  
-         	    <ion-icon name="eye"></ion-icon> panoramic 
-              </button>
-              <button class="button  button-dark" (click)="goToVirtualRealityViewPage()" > 
-         	    <ion-icon name="eye"></ion-icon> VR 
-              </button> <br>
+    <ion-card>
+        
+            <img src="images/HomePage.png"/>
+            <ion-card-content>
+                <h2 class="card-title">
+                  OFS Renter's Relaity
+                </h2>
+                <p>
+                  Find an apartment, condo or house for rent on ofs.com(R). Discover apartment rentals,
+                  townhomes and many other types of rentals that suit your needs.
+                </p>
+            </ion-card-content>
+            <ion-list>
+                <ion-item >
+                
+                    <ion-icon item-left name="home" ></ion-icon>
+                     <div> <h3>1 Bedroom</h3>
+                      <button outline small  (click)="goToPanoramicViewPage()"> <ion-icon item-left name="eye"></ion-icon>  Panoramic</button>
+                      <button outline small  ion-planet (click)="goToVirtualRealityViewPage()"> <ion-icon item-left name="planet"></ion-icon>VR  </button> </div>
+                   
+                </ion-item>
 
-               <button class="button button-light">  
-         	    <ion-icon name="eye"></ion-icon> 2 BHK 
-              </button>     
-              <button class="button  button-dark">  
-         	    <ion-icon name="eye"></ion-icon> panoramic 
-              </button>
-              <button class="button  button-dark"> 
-         	    <ion-icon name="eye"></ion-icon> VR 
-              </button><br>
+                <ion-item>
+                    <ion-icon item-left name="home"></ion-icon>
+                    <h3>2 Bedrooms</h3>
+                      <button outline small (click)="goToPanoramicViewPage()"> <ion-icon item-left name="eye"></ion-icon> Panoramic</button>
+                      <button outline small (click)="goToVirtualRealityViewPage()"> <ion-icon item-left name="planet"></ion-icon>VR  </button>
+                   
+                </ion-item>
 
-               <button class="button button-light">  
-         	    <ion-icon name="eye"></ion-icon> 3 BHK 
-              </button>     
-              <button class="button  button-dark">  
-         	    <ion-icon name="eye"></ion-icon> panoramic 
-              </button>
-              <button class="button  button-dark"> 
-         	    <ion-icon name="eye"></ion-icon> VR 
-              </button>
-   </div>
-   <button class="button  clear " (click)="goToContactPage()"> 
-         	    <ion-icon name="person"></ion-icon> Contact
-              </button>
+                <ion-item>
+                    <ion-icon item-left name="home"></ion-icon>
+                    <h3>3 Bedrooms</h3>
+                      <button outline small (click)="goToPanoramicViewPage()"> <ion-icon item-left name="eye"></ion-icon> Panoramic</button>
+                      <button outline small (click)="goToVirtualRealityViewPage()"> <ion-icon item-left name="planet"></ion-icon>VR  </button>
+              </ion-item>
+            </ion-list>
+
+              <ion-row no-padding>
+              
+                <ion-col text-right>
+                    <button clear small (click)="goToContactPage()">
+                        <ion-icon name="person"></ion-icon>
+                        Contact
+                    </button>
+                </ion-col>
+            </ion-row>
+       
+        </ion-card>
 </ion-content>
 
