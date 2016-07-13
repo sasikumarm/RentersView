@@ -1,0 +1,46 @@
+<ion-navbar *navbar>
+    <ion-title>
+      Apartment Renter’s Realty
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+    <p> &emsp;Find an apartment, condo or house for rent on ofs.com(R). Discover apartment rentals,
+       townhomes and many other types of rentals that suit your needs.</p>
+   <div padding >
+
+              <button class="button button-light">  
+         	    <ion-icon name="home"></ion-icon> 1 BHK 
+              </button>     
+              <button class="button  button-dark" (click)="goToPanoramicViewPage()">  
+         	    <ion-icon name="eye"></ion-icon> panoramic 
+              </button>
+              <button class="button  button-dark" (click)="goToVirtualRealityViewPage()" > 
+         	    <ion-icon name="eye"></ion-icon> VR 
+              </button> <br>
+
+               <button class="button button-light">  
+         	    <ion-icon name="eye"></ion-icon> 2 BHK 
+              </button>     
+              <button class="button  button-dark">  
+         	    <ion-icon name="eye"></ion-icon> panoramic 
+              </button>
+              <button class="button  button-dark"> 
+         	    <ion-icon name="eye"></ion-icon> VR 
+              </button><br>
+
+               <button class="button button-light">  
+         	    <ion-icon name="eye"></ion-icon> 3 BHK 
+              </button>     
+              <button class="button  button-dark">  
+         	    <ion-icon name="eye"></ion-icon> panoramic 
+              </button>
+              <button class="button  button-dark"> 
+         	    <ion-icon name="eye"></ion-icon> VR 
+              </button>
+   </div>
+   <button class="button  clear " (click)="goToContactPage()"> 
+         	    <ion-icon name="person"></ion-icon> Contact
+              </button>
+</ion-content>
+
