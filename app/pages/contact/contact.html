@@ -1,19 +1,26 @@
+<ion-content>
 
-    
-    <ion-content>
-     <div padding >
-    <div class="row">
-		<label for="name">Name:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="email">Email:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="message">Message:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-	</div>
-	<button light round (click)="goToHomePage()" >submit</button>
-    </div>
-    <ion-content>
+    <ion-item>
+        <ion-label floating>First Name</ion-label>
+        <ion-input type="text" value="" [ngFormControl]></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Last Name</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Message</ion-label>
+        <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <button danger (click)="onCancelClick()">CANCEL</button>
+    <button type="submit" (click)="onSubmitClick()">SUBMIT</button>
+
+</ion-content>

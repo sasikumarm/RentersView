@@ -11,8 +11,11 @@ export class ContactPage {
     constructor(private nav: NavController) {
     }
 
-     goToHomePage() {
+    onCancelClick() {
         this.nav.pop();
     }
 
+    onSubmitClick() {
+        this.nav.pop();
+    }
 }
