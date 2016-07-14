@@ -2,22 +2,22 @@
 
     <ion-item>
         <ion-label floating>First Name</ion-label>
-        <ion-input type="text" value="" [ngFormControl]></ion-input>
+        <ion-input type="text" [(ngModel)]="firstName" ></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label floating>Last Name</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text"  [(ngModel)]="lasttName" ></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label floating>Email</ion-label>
-        <ion-input type="Email"></ion-input>
+        <ion-input type="Email" [(ngModel)]="email" ></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label floating>Message</ion-label>
-        <ion-textarea></ion-textarea>
+        <ion-textarea> [(ngModel)]=message"  </ion-textarea>
     </ion-item>
 
     <button danger (click)="onCancelClick()">CANCEL</button>

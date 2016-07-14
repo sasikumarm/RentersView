@@ -8,6 +8,11 @@ import {HomePage} from '../home/home';
 })
 export class ContactPage {
 
+    public firstName:string;
+    public lastName:string;
+    public email:string;
+    public message:string;
+
     constructor(private nav: NavController) {
     }
 
