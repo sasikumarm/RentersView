@@ -7,12 +7,12 @@ import {HomePage} from '../home/home';
     templateUrl: 'build/pages/contact/contact.html'
 })
 export class ContactPage {
- 
+
     constructor(private nav: NavController) {
     }
 
      goToHomePage() {
-        this.nav.push(HomePage);
+        this.nav.pop();
     }
 
 }

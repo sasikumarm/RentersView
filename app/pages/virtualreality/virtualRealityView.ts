@@ -5,9 +5,11 @@ import { NavController, NavParams } from 'ionic-angular';
     templateUrl: 'build/pages/virtualreality/virtualRealityView.html'
 })
 export class VirtualRealityView {
- 
+
     constructor(private nav: NavController) {
     }
 
-  
+    goToHomePage() {
+       this.nav.pop();
+   }
 }

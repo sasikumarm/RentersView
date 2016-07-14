@@ -5,10 +5,11 @@ import { NavController, NavParams } from 'ionic-angular';
     templateUrl: 'build/pages/panoramic/panoramicview.html'
 })
 export class PanoramicView {
- 
+
     constructor(private nav: NavController) {
     }
 
-  
+    goToHomePage() {
+       this.nav.pop();
+   }
 }
-
