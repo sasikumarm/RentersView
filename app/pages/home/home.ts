@@ -13,14 +13,14 @@ export class HomePage {
   }
 
   goToPanoramicViewPage() {
-    this.nav.push(PanoramicView);
+      this.nav.push(PanoramicView);
   }
 
   goToVirtualRealityViewPage() {
-    this.nav.push(VirtualRealityView);
+      this.nav.push(VirtualRealityView);
   }
 
   goToContactPage() {
-    this.nav.push(ContactPage);
+      this.nav.push(ContactPage);
   }
 }
