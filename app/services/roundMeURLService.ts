@@ -25,7 +25,7 @@ export class RoundMeURLService {
 
        if(mode=="PAN") {
             if( bedroomType == '1'){
-                roundMeURL= "https://roundme.com/embed/29423/70899";
+                roundMeURL= "https://roundme.com/embed/39583/96541";
             }else if(bedroomType == '2'){
                 roundMeURL= "https://roundme.com/embed/28534/68796";
             }else if(bedroomType == '3'){
