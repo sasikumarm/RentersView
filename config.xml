@@ -18,6 +18,7 @@
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
     <allow-navigation href="https://roundme.com/*"/>
+    <allow-navigation href="https://storage.googleapis.com/*"/>
   </platform>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
