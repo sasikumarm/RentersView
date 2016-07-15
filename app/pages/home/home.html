@@ -1,54 +1,60 @@
-<ion-content class="home">
+    <ion-content class="home">
 
-    <ion-card>
+        <ion-card>
 
-        <img src="images/HomePage.png" />
+            <!-- <img src="images/HomePage.png" /> -->
 
-        <ion-card-content>
-            <h2 class="card-title">OFS Renter's Realty</h2>
-            <p>Find an apartment, condo or house for rent on ofs.com(R). Discover apartment rentals, townhomes and many other types of rentals that suit your needs.</p>
-        </ion-card-content>
+            <ion-card-content>
+                <h2 class="card-title">OFS Renter's Realty</h2>
+                <p>Find an apartment, condo or house for rent on ofs.com(R). Discover apartment rentals, townhomes and many other types of rentals that suit your needs.</p>
+            </ion-card-content>
 
-        <ion-list>
+            <ion-list>
 
-            <ion-item>
-                <ion-icon item-left name="home"></ion-icon>
+                <ion-item>
+                    <!-- <ion-icon item-left name="home"></ion-icon> -->
+                    <img icon item-left src="../../../images/OneBed.png" style="width:24px; height:24px;"/>
+
                     <h3>1 Bedroom</h3>
                     <button outline small (click)="goToPanoramicViewPage('1')">
                         <ion-icon item-left name="eye"></ion-icon>Panorama</button>
                     <button outline small (click)="goToVirtualRealityViewPage('1')">
                         <ion-icon item-left name="planet"></ion-icon>VR</button>
-            </ion-item>
+                </ion-item>
 
-            <ion-item>
-                <ion-icon item-left name="home"></ion-icon>
-                <h3>2 Bedrooms</h3>
-                <button outline small (click)="goToPanoramicViewPage('2')">
-                    <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                <button outline small (click)="goToVirtualRealityViewPage('2')">
-                    <ion-icon item-left name="planet"></ion-icon>VR</button>
+                <ion-item>
+                    <!-- <ion-icon item-left name="home"></ion-icon> -->
+                    <img icon item-left src="../../../images/OneBed.png" style="width:24px; height:24px;"/>
 
-            </ion-item>
+                    <h3>2 Bedrooms</h3>
+                    <button outline small (click)="goToPanoramicViewPage('2')">
+                        <ion-icon item-left name="eye"></ion-icon>Panorama</button>
+                    <button outline small (click)="goToVirtualRealityViewPage('2')">
+                        <ion-icon item-left name="planet"></ion-icon>VR</button>
 
-            <ion-item>
-                <ion-icon item-left name="home"></ion-icon>
-                <h3>3 Bedrooms</h3>
-                <button outline small (click)="goToPanoramicViewPage('3')">
-                    <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                <button outline small (click)="goToVirtualRealityViewPage('3')">
-                    <ion-icon item-left name="planet"></ion-icon>VR</button>
-            </ion-item>
-        </ion-list>
+                </ion-item>
 
-        <ion-row no-padding>
+                <ion-item>
+                    <!-- <ion-icon item-left name="home"></ion-icon> -->
+                    <img icon item-left src="../../../images/OneBed.png" style="width:24px; height:24px;"/>
 
-            <ion-col text-right>
-                <button clear small (click)="goToContactPage()">
-                    <ion-icon name="call"></ion-icon>
-                    CONTACT US
-                </button>
-            </ion-col>
-        </ion-row>
+                    <h3>3 Bedrooms</h3>
+                    <button outline small (click)="goToPanoramicViewPage('3')">
+                        <ion-icon item-left name="eye"></ion-icon>Panorama</button>
+                    <button outline small (click)="goToVirtualRealityViewPage('3')">
+                        <ion-icon item-left name="planet"></ion-icon>VR</button>
+                </ion-item>
+            </ion-list>
 
-    </ion-card>
-</ion-content>
+            <ion-row no-padding>
+
+                <ion-col text-right>
+                    <button clear small (click)="goToContactPage()">
+                        <ion-icon name="call"></ion-icon>
+                        CONTACT US
+                    </button>
+                </ion-col>
+            </ion-row>
+
+        </ion-card>
+    </ion-content>
