@@ -12,7 +12,7 @@ export class RoundMeURLService {
 
        if(mode=="VR") {
             if( bedroomType == '1'){
-                roundMeURL= "https://roundme.com/embed/39583/96541";
+                roundMeURL= "https://roundme.com/embed/60525/151004";
             }else if(bedroomType == '2'){
                 roundMeURL= "https://roundme.com/embed/28534/68796";
             }else if(bedroomType == '3'){
@@ -25,7 +25,7 @@ export class RoundMeURLService {
 
        if(mode=="PAN") {
             if( bedroomType == '1'){
-                roundMeURL= "https://roundme.com/embed/39583/96541";
+                roundMeURL= "https://roundme.com/embed/60525/151004";
             }else if(bedroomType == '2'){
                 roundMeURL= "https://roundme.com/embed/28534/68796";
             }else if(bedroomType == '3'){
