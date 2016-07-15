@@ -3,7 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {RoundMeURLService} from '../../services/roundMeURLService';
 
 @Component({
-    templateUrl: 'build/pages/panoramic/panoramicview.html',
+    templateUrl: 'build/pages/panoramic/panoramicView.html',
     providers: [RoundMeURLService]
 })
 export class PanoramicView {
