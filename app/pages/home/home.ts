@@ -12,15 +12,17 @@ export class HomePage {
   constructor(private nav: NavController) {
   }
 
-  goToPanoramicViewPage(bedRoomType:String) {
-      this.nav.push(PanoramicView, {
-            bedRoomType: bedRoomType
+  goToPanoramicViewPage(bedRoomType:string,viewBy:string) {
+       this.nav.push(PanoramicView, {
+            bedRoomType: bedRoomType,
+            viewBy:viewBy
         });
   }
 
-  goToVirtualRealityViewPage(bedRoomType:String) {
+  goToVirtualRealityViewPage(bedRoomType:string,viewBy:string) {
       this.nav.push(VirtualRealityView, {
-            bedRoomType: bedRoomType
+            bedRoomType: bedRoomType,
+            viewBy:viewBy
         });
   }
 

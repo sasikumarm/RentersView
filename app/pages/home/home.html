@@ -2,7 +2,7 @@
 
         <ion-card>
 
-            <!-- <img src="images/HomePage.png" /> -->
+           <!-- <img src="images/HomePage.png" /> -->
 
             <ion-card-content>
                 <h2 class="card-title">OFS Renter's Realty</h2>
@@ -13,35 +13,37 @@
 
                 <ion-item>
                     <!-- <ion-icon item-left name="home"></ion-icon> -->
-                    <img icon item-left src="../../../images/OneBed.png" style="width:24px; height:24px;"/>
+                    <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
 
                     <h3>1 Bedroom</h3>
-                    <button outline small (click)="goToPanoramicViewPage('1')">
+                    <button outline small (click)="goToPanoramicViewPage('1','RoundMe')">
                         <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                    <button outline small (click)="goToVirtualRealityViewPage('1')">
+                    <button outline small (click)="goToVirtualRealityViewPage('1','RoundMe')">
                         <ion-icon item-left name="planet"></ion-icon>VR</button>
+                    <button outline small (click)="goToPanoramicViewPage('1','Google')">
+                        <ion-icon item-left name="planet"></ion-icon>Google</button>
                 </ion-item>
 
                 <ion-item>
                     <!-- <ion-icon item-left name="home"></ion-icon> -->
-                    <img icon item-left src="../../../images/OneBed.png" style="width:24px; height:24px;"/>
+                    <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
 
                     <h3>2 Bedrooms</h3>
-                    <button outline small (click)="goToPanoramicViewPage('2')">
+                    <button outline small (click)="goToPanoramicViewPage('2','RoundMe')">
                         <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                    <button outline small (click)="goToVirtualRealityViewPage('2')">
+                    <button outline small (click)="goToVirtualRealityViewPage('2','RoundMe')">
                         <ion-icon item-left name="planet"></ion-icon>VR</button>
 
                 </ion-item>
 
                 <ion-item>
                     <!-- <ion-icon item-left name="home"></ion-icon> -->
-                    <img icon item-left src="../../../images/OneBed.png" style="width:24px; height:24px;"/>
+                    <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
 
                     <h3>3 Bedrooms</h3>
-                    <button outline small (click)="goToPanoramicViewPage('3')">
+                    <button outline small (click)="goToPanoramicViewPage('3','RoundMe')">
                         <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                    <button outline small (click)="goToVirtualRealityViewPage('3')">
+                    <button outline small (click)="goToVirtualRealityViewPage('3','RoundMe')">
                         <ion-icon item-left name="planet"></ion-icon>VR</button>
                 </ion-item>
             </ion-list>

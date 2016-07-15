@@ -6,36 +6,37 @@ export class RoundMeURLService {
     constructor() {
     }
 
-    getRoundMeUrl(bedroomType:String,mode:String){
+     getRoundMeUrlForVirtualRealityView(bedroomType:String){
 
-       let roundMeURL:string;
+      let roundMeURL:string;
+       
+        if( bedroomType == '1'){
+            roundMeURL= "https://roundme.com/embed/60525/151004";
+        } else if(bedroomType == '2'){
+            roundMeURL= "https://roundme.com/embed/28534/68796";
+        } else if(bedroomType == '3'){
+            roundMeURL= "https://roundme.com/embed/31524/75796";
+        } else{
+            roundMeURL= "https://roundme.com/embed/48381/121294";
+        } 
 
-       if(mode=="VR") {
-            if( bedroomType == '1'){
-                roundMeURL= "https://roundme.com/embed/60525/151004";
-            }else if(bedroomType == '2'){
-                roundMeURL= "https://roundme.com/embed/28534/68796";
-            }else if(bedroomType == '3'){
-                roundMeURL= "https://roundme.com/embed/31524/75796";
-            }else{
-                roundMeURL= "https://roundme.com/embed/48381/121294";
-            }
-
-       }
-
-       if(mode=="PAN") {
-            if( bedroomType == '1'){
-                roundMeURL= "https://roundme.com/embed/60525/151004";
-            }else if(bedroomType == '2'){
-                roundMeURL= "https://roundme.com/embed/28534/68796";
-            }else if(bedroomType == '3'){
-                roundMeURL= "https://roundme.com/embed/31524/75796";
-            }else{
-                roundMeURL= "https://roundme.com/embed/48381/121294";
-            }
-        }
-       return roundMeURL;
+      return roundMeURL;
    }
 
-   
+    getRoundMeUrlForPanoramicView(bedroomType:String){
+ 
+      let roundMeURL:string;
+       
+        if( bedroomType == '1'){
+            roundMeURL= "https://roundme.com/embed/60525/151004";
+        } else if(bedroomType == '2'){
+            roundMeURL= "https://roundme.com/embed/28534/68796";
+        } else if(bedroomType == '3'){
+            roundMeURL= "https://roundme.com/embed/31524/75796";
+        } else{
+            roundMeURL= "https://roundme.com/embed/48381/121294";
+        } 
+
+      return roundMeURL;
+    }
 }
