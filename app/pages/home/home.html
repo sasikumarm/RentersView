@@ -1,62 +1,103 @@
-    <ion-content class="home">
 
-        <ion-card>
+<ion-content class="home">
 
-           <!-- <img src="images/HomePage.png" /> -->
+    <ion-card>
 
-            <ion-card-content>
-                <h2 class="card-title">OFS Renter's Realty</h2>
-                <p>Find an apartment, condo or house for rent on ofs.com(R). Discover apartment rentals, townhomes and many other types of rentals that suit your needs.</p>
-            </ion-card-content>
+       <!-- <img src="images/HomePage.png" /> -->
 
-            <ion-list>
+        <ion-card-content>
+            <h2 class="card-title">OFS Renter's Realty</h2>
+            <p>Find an apartment, condo or house for rent on ofs.com(R). Discover apartment rentals, townhomes and many other types of rentals that suit your needs.</p>
+        </ion-card-content>
 
-                <ion-item>
-                    <!-- <ion-icon item-left name="home"></ion-icon> -->
-                    <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
+        <ion-list>
 
-                    <h3>1 Bedroom</h3>
-                    <button outline small (click)="goToPanoramicViewPage('1','RoundMe')">
-                        <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                    <button outline small (click)="goToVirtualRealityViewPage('1','RoundMe')">
-                        <ion-icon item-left name="planet"></ion-icon>VR</button>
-                    <button outline small (click)="goToPanoramicViewPage('1','Google')">
-                        <ion-icon item-left name="planet"></ion-icon>Google</button>
-                </ion-item>
+            <ion-item>
+                <!-- <ion-icon item-left name="home"></ion-icon> -->
+                <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
 
-                <ion-item>
-                    <!-- <ion-icon item-left name="home"></ion-icon> -->
-                    <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
+                <h3>1 Bedroom</h3>
 
-                    <h3>2 Bedrooms</h3>
-                    <button outline small (click)="goToPanoramicViewPage('2','RoundMe')">
-                        <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                    <button outline small (click)="goToVirtualRealityViewPage('2','RoundMe')">
-                        <ion-icon item-left name="planet"></ion-icon>VR</button>
+                <!-- <button outline small (click)="goToPanoramicViewPage('1','RoundMe')">
+                    <ion-icon item-left name="eye"></ion-icon>Panorama</button>
+                <button outline small (click)="goToVirtualRealityViewPage('1','RoundMe')">
+                    <ion-icon item-left name="planet"></ion-icon>VR</button>
+                <button outline small (click)="goToPanoramicViewPage('1','Google')">
+                    <ion-icon item-left name="planet"></ion-icon>Google</button> -->
 
-                </ion-item>
+                <button clear small (click)="goToPanoramicViewPage('1','RoundMe')">
+                    <img icon src="images/RoundMe.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/Panorama.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/GoogleCardboard.png" style="width:32px; height:34px;"/>
+                </button>
 
-                <ion-item>
-                    <!-- <ion-icon item-left name="home"></ion-icon> -->
-                    <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
+                <button clear small (click)="goToPanoramicViewPage('1','Google')">
+                    <img icon src="images/Google.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/Panorama.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/GoogleCardboard.png" style="width:32px; height:34px;"/>
+                </button>
+            </ion-item>
 
-                    <h3>3 Bedrooms</h3>
-                    <button outline small (click)="goToPanoramicViewPage('3','RoundMe')">
-                        <ion-icon item-left name="eye"></ion-icon>Panorama</button>
-                    <button outline small (click)="goToVirtualRealityViewPage('3','RoundMe')">
-                        <ion-icon item-left name="planet"></ion-icon>VR</button>
-                </ion-item>
-            </ion-list>
+            <ion-item>
+                <!-- <ion-icon item-left name="home"></ion-icon> -->
+                <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
 
-            <ion-row no-padding>
+                <h3>2 Bedrooms</h3>
 
-                <ion-col text-right>
-                    <button clear small (click)="goToContactPage()">
-                        <ion-icon name="call"></ion-icon>
-                        CONTACT US
-                    </button>
-                </ion-col>
-            </ion-row>
+                <!-- <button outline small (click)="goToPanoramicViewPage('2','RoundMe')">
+                    <ion-icon item-left name="eye"></ion-icon>Panorama</button>
+                <button outline small (click)="goToVirtualRealityViewPage('2','RoundMe')">
+                    <ion-icon item-left name="planet"></ion-icon>VR</button> -->
 
-        </ion-card>
-    </ion-content>
+                <button clear small (click)="goToPanoramicViewPage('2','RoundMe')">
+                    <img icon src="images/RoundMe.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/Panorama.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/GoogleCardboard.png" style="width:32px; height:34px;"/>
+                </button>
+
+                <button clear small (click)="goToPanoramicViewPage('2','Google')">
+                    <img icon src="images/Google.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/Panorama.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/GoogleCardboard.png" style="width:32px; height:34px;"/>
+                </button>
+
+            </ion-item>
+
+            <ion-item>
+                <!-- <ion-icon item-left name="home"></ion-icon> -->
+                <img icon item-left src="images/OneBed.png" style="width:24px; height:24px;"/>
+
+                <h3>3 Bedrooms</h3>
+
+                <!-- <button outline small (click)="goToPanoramicViewPage('3','RoundMe')">
+                    <ion-icon item-left name="eye"></ion-icon>Panorama</button>
+                <button outline small (click)="goToVirtualRealityViewPage('3','RoundMe')">
+                    <ion-icon item-left name="planet"></ion-icon>VR</button> -->
+
+                <button clear small (click)="goToPanoramicViewPage('1','RoundMe')">
+                    <img icon src="images/RoundMe.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/Panorama.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/GoogleCardboard.png" style="width:32px; height:34px;"/>
+                </button>
+
+                <button clear small (click)="goToPanoramicViewPage('1','Google')">
+                    <img icon src="images/Google.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/Panorama.png" style="width:24px; height:24px;"/> &nbsp;
+                    <img icon src="images/GoogleCardboard.png" style="width:32px; height:34px;"/>
+                </button>
+
+            </ion-item>
+        </ion-list>
+
+        <ion-row no-padding>
+
+            <ion-col text-right>
+                <button clear small (click)="goToContactPage()">
+                    <ion-icon name="call"></ion-icon>
+                    CONTACT US
+                </button>
+            </ion-col>
+        </ion-row>
+
+    </ion-card>
+</ion-content>
